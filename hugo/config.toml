@@ -1,5 +1,19 @@
 baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ananke"
+languageCode = 'zh-CN'
+title = 'Star soup'
+
+theme = "hugo-theme-jane"
 publishDir = "../static"
+
+hasCJKLanguage = true
+paginate = 5
+rssLimit = 20
+copyright = "howin98"
+
+[params]
+
+[params.utteranc]
+enable = true
+repo = "howin98/howin98.github.io"
+issueTerm = "pathname"
+theme = "github-light"
