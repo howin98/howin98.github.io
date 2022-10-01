@@ -25,6 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     # if: ${{contains(toJson(github.event.pull_request.labels.*.name), 'publish')}}
     steps:
+      - run: echo ${{toJson(github.event.pull_request.labels.*.name)}}
       - name: Checkout
         uses: actions/checkout@v3
       - name: Setup Pages
